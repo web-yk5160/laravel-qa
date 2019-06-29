@@ -7,5 +7,9 @@
   "Confirm Password":"パスワードの確認",
   "Logout":"ログアウト",
   "Remember Me":"パスワードを保存する",
-  "Forgot Your Password?":"パスワードを忘れたかたはこちら"
+  "Forgot Your Password?":"パスワードを忘れたかたはこちら",
+  "Reset Password":"パスワードのリセット",
+  "Send Password Reset Link":"送信",
+  "title":"タイトル",
+  "body":"質問内容"
 }

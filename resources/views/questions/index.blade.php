@@ -20,7 +20,7 @@
                       @include ('questions._excerpt')
                       @empty
                         <div class="alert alert-warning">
-                          <strong>Sorry</strong> There are no questions available.
+                          まだ質問がありません
                         </div>
                       @endforelse
 

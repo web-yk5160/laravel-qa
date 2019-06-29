@@ -115,7 +115,8 @@ form.form-delete {
 }
 
 .card-body {
-  background-color:#fcf5ef;
+  // background-color:#fcf5ef;
+  background-color:#fffdfc;
 }
 
 a {
@@ -153,12 +154,14 @@ label {
   color:#FFF;
   background-color: #FFAA00;
   opacity: 0.7;
+  border-style: none;
 }
 
 .btn-outline-primary {
   color:#FFF;
   background-color: #FFAA00;
   border-color: #FFAA00;
+  border-style: none;
 }
 
 .btn-outline-primary:hover {
@@ -166,6 +169,11 @@ label {
   background-color: #FFAA00;
   opacity: 0.5;
   border-color: #FFAA00;
+  border-style: none;
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 .btn-outline-primary:disabled {
@@ -219,5 +227,5 @@ label {
 }
 
 .foot {
-  padding-bottom: 20rem !important;
+  padding-bottom: 20rem;
 }
