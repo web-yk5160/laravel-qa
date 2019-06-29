@@ -49,7 +49,7 @@ class QuestionsController extends Controller
     {
         $request->user()->questions()->create($request->only('title', 'body'));
 
-        return redirect()->route('questions.index')->with('success', "質問が送信されました");
+        return redirect()->route('questions.index')->with('成功', "質問が送信されました");
     }
 
     /**
@@ -98,7 +98,7 @@ class QuestionsController extends Controller
             ]);
         }
 
-        return redirect('/questions')->with('success', '質問が更新されました');
+        return redirect('/questions')->with('成功', '質問が更新されました');
     }
 
     /**
@@ -120,6 +120,6 @@ class QuestionsController extends Controller
             ]);
         }
 
-        return redirect('/questions')->with('success', "質問が削除されました");
+        return redirect('/questions')->with('成功', "質問が削除されました");
     }
 }

@@ -26,7 +26,7 @@ export default {
       })
       .then(({data}) => {
         this.bodyHtml = data.body_html;
-        this.$toast.success(data.message, "Success", {timeout: 3000 });
+        this.$toast.success(data.message, "成功", {timeout: 3000 });
         this.editing = false;
       })
     },
@@ -34,7 +34,7 @@ export default {
     payload () {},
 
     destroy () {
-      this.$toast.question('Are you sure about that?', "confirm", {
+      this.$toast.question('本当に削除しますか？', "確認", {
       timeout: 20000,
       close: false,
       overlay: true,
@@ -45,14 +45,14 @@ export default {
 
       position: 'center',
       buttons: [
-          ['<button><b>YES</b></button>', (instance, toast) => {
+          ['<button><b>削除する</b></button>', (instance, toast) => {
 
               this.delete();
 
               instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
 
           }, true],
-          ['<button>NO</button>', function (instance, toast) {
+          ['<button>キャンセル</button>', function (instance, toast) {
 
               instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
 

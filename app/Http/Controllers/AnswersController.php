@@ -41,7 +41,7 @@ class AnswersController extends Controller
             ]);
         }
 
-        return back()->with('success', "回答が送信されました");
+        return back()->with('成功', "回答が送信されました");
     }
 
     /**
@@ -79,7 +79,7 @@ class AnswersController extends Controller
             ]);
         }
 
-        return redirect()->route('questions.show', $question->slug)->with('success', '回答が更新されました');
+        return redirect()->route('questions.show', $question->slug)->with('成功', '回答が更新されました');
     }
 
     /**
@@ -101,6 +101,6 @@ class AnswersController extends Controller
             ]);
         }
 
-        return back()->with('success', '回答が削除されました');
+        return back()->with('成功', '回答が削除されました');
     }
 }

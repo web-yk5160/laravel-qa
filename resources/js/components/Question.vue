@@ -112,7 +112,7 @@ export default {
     delete () {
       axios.delete(this.endpoint)
           .then(({data}) => {
-            this.$toast.success(data.message, "Success", { timeout: 2000 });
+            this.$toast.success(data.message, "成功", { timeout: 2000 });
           });
 
           setTimeout(() => {

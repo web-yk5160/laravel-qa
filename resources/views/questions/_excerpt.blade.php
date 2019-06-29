@@ -21,7 +21,7 @@
           <form class="form-delete" method="post" action="{{ route('questions.destroy', $question->id) }}">
             @method('DELETE')
             @csrf
-            <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('削除してよろしいですか?')">削除</button>
+            <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('本当に削除しますか？')">削除</button>
           </form>
         @endcan
       </div>

@@ -35,7 +35,7 @@ export default {
         this.$toast.error(error.response.data.message, "Error");
       })
       .then(({data}) => {
-        this.$toast.success(data.message, "Success");
+        this.$toast.success(data.message, "成功");
         this.body = '';
         this.$emit('created', data.answer);
       })

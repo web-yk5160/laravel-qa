@@ -10971,7 +10971,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       axios.post("/answers/".concat(this.id, "/accept")).then(function (res) {
-        _this2.$toast.success(res.data.message, "Success", {
+        _this2.$toast.success(res.data.message, "成功", {
           timeout: 3000,
           position: 'bottomLeft'
         });
@@ -11077,7 +11077,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       axios["delete"](this.endpoint).then(function (res) {
-        _this.$toast.success(res.data.message, "Success", {
+        _this.$toast.success(res.data.message, "成功", {
           timeout: 2000
         });
 
@@ -11306,7 +11306,7 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (_ref) {
         var data = _ref.data;
 
-        _this.$toast.success(data.message, "Success");
+        _this.$toast.success(data.message, "成功");
 
         _this.body = '';
 
@@ -11449,7 +11449,7 @@ __webpack_require__.r(__webpack_exports__);
       axios["delete"](this.endpoint).then(function (_ref) {
         var data = _ref.data;
 
-        _this.$toast.success(data.message, "Success", {
+        _this.$toast.success(data.message, "成功", {
           timeout: 2000
         });
       });
@@ -62761,7 +62761,7 @@ __webpack_require__.r(__webpack_exports__);
         var data = _ref2.data;
         _this.bodyHtml = data.body_html;
 
-        _this.$toast.success(data.message, "Success", {
+        _this.$toast.success(data.message, "成功", {
           timeout: 3000
         });
 
@@ -62772,7 +62772,7 @@ __webpack_require__.r(__webpack_exports__);
     destroy: function destroy() {
       var _this2 = this;
 
-      this.$toast.question('Are you sure about that?', "confirm", {
+      this.$toast.question('本当に削除しますか？', "確認", {
         timeout: 20000,
         close: false,
         overlay: true,
@@ -62781,13 +62781,13 @@ __webpack_require__.r(__webpack_exports__);
         zindex: 999,
         title: 'Hey',
         position: 'center',
-        buttons: [['<button><b>YES</b></button>', function (instance, toast) {
+        buttons: [['<button><b>削除する</b></button>', function (instance, toast) {
           _this2["delete"]();
 
           instance.hide({
             transitionOut: 'fadeOut'
           }, toast, 'button');
-        }, true], ['<button>NO</button>', function (instance, toast) {
+        }, true], ['<button>キャンセル</button>', function (instance, toast) {
           instance.hide({
             transitionOut: 'fadeOut'
           }, toast, 'button');
