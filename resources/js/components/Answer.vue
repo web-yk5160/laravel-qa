@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-4">
             <div class="ml-auto">
-                      <a v-if="authorize('modify', answer)" @click.prevent="edit" class="btn btn-sm btn-outline-info">編集</a>
+                      <a v-if="authorize('modify', answer)" @click.prevent="edit" class="btn btn-sm btn-outline-info" style="color:#FFF;">編集</a>
                       <button v-if="authorize('modify', answer)" @click="destroy" class="btn btn-sm btn-outline-danger">削除</button>
                   </div>
           </div>

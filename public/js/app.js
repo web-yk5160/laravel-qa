@@ -49219,6 +49219,7 @@ var render = function() {
                           "a",
                           {
                             staticClass: "btn btn-sm btn-outline-info",
+                            staticStyle: { color: "#FFF" },
                             on: {
                               click: function($event) {
                                 $event.preventDefault()
@@ -49626,6 +49627,7 @@ var render = function() {
                                 "a",
                                 {
                                   staticClass: "btn btn-sm btn-outline-info",
+                                  staticStyle: { color: "#FFF" },
                                   on: {
                                     click: function($event) {
                                       $event.preventDefault()

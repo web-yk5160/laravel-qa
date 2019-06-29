@@ -11127,12 +11127,12 @@ a.text-dark:focus {
 }
 
 .counters .status.answered {
-  border: 1px solid #5fbb7e;
-  color: #5fbb7e;
+  border: 1px solid #ffaa00;
+  color: #ffaa00;
 }
 
 .counters .status.answered-accepted {
-  background: #5fbb7e;
+  background: #ffaa00;
   color: #fff;
 }
 
@@ -11197,5 +11197,116 @@ form.form-delete {
 
 .cat {
   background-image: url(/images/catstamp.png?dfb5f9092c3d84e60ecfb7d291a6aa65);
+}
+
+.card-header {
+  background-color: #995400;
+}
+
+.card-body {
+  background-color: #fcf5ef;
+}
+
+a {
+  color: #995400;
+}
+
+a:hover {
+  color: #FFAA00;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.list {
+  color: #FFF;
+  margin-bottom: 0;
+}
+
+label {
+  color: #FFAA00;
+}
+
+.page-item.active .page-link {
+  background-color: #995400;
+  border-color: #995400;
+}
+
+.btn-outline-secondary {
+  color: #FFF;
+  background-color: #FFAA00;
+  border-color: #FFAA00;
+}
+
+.btn-outline-secondary:hover {
+  color: #FFF;
+  background-color: #FFAA00;
+  opacity: 0.7;
+}
+
+.btn-outline-primary {
+  color: #FFF;
+  background-color: #FFAA00;
+  border-color: #FFAA00;
+}
+
+.btn-outline-primary:hover {
+  color: #FFF;
+  background-color: #FFAA00;
+  opacity: 0.5;
+  border-color: #FFAA00;
+}
+
+.btn-outline-primary:disabled {
+  color: #FFAA00;
+}
+
+.btn-outline-primary:disabled:hover {
+  background-color: transparent;
+}
+
+.btn-outline-info {
+  background-color: #995400;
+  border-color: #995400;
+  color: #FFF;
+}
+
+.btn-outline-info:hover {
+  color: #FFF;
+  background-color: #995400;
+  border-color: #995400;
+}
+
+.btn-outline-danger {
+  background-color: #e3342f;
+  border-color: #e3342f;
+  color: #FFF;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e3342f;
+  border-color: #e3342f;
+  color: #FFF;
+  opacity: 0.5;
+}
+
+.btn-primary {
+  color: #FFF;
+  background-color: #FFAA00;
+  border-color: #FFAA00;
+}
+
+.btn-primary:hover {
+  background-color: #FFAA00;
+  border-color: #FFAA00;
+  color: #FFF;
+  opacity: 0.5;
+}
+
+.btn-link {
+  color: #FFAA00;
+}
+
+.foot {
+  padding-bottom: 20rem !important;
 }
 

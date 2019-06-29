@@ -34,12 +34,12 @@
     }
 
     &.answered {
-      border: 1px solid $color-green;
-      color: $color-green;
+      border: 1px solid $color-orange;
+      color: $color-orange;
     }
 
     &.answered-accepted {
-      background: $color-green;
+      background: $color-orange;
       color: $color-white;
     }
   }
@@ -108,4 +108,116 @@ form.form-delete {
 
 .cat {
   background-image: url(../img/catstamp.png);
+}
+
+.card-header {
+  background-color:#995400;
+}
+
+.card-body {
+  background-color:#fcf5ef;
+}
+
+a {
+  color: #995400;
+
+  &:hover {
+    color: #FFAA00;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+}
+
+.list {
+  color: #FFF;
+  margin-bottom: 0;
+}
+
+
+label {
+  color: #FFAA00;
+}
+
+.page-item.active .page-link {
+  background-color:#995400;
+  border-color: #995400;
+}
+
+.btn-outline-secondary {
+  color:#FFF;
+  background-color: #FFAA00;
+  border-color: #FFAA00;
+}
+
+.btn-outline-secondary:hover {
+  color:#FFF;
+  background-color: #FFAA00;
+  opacity: 0.7;
+}
+
+.btn-outline-primary {
+  color:#FFF;
+  background-color: #FFAA00;
+  border-color: #FFAA00;
+}
+
+.btn-outline-primary:hover {
+  color:#FFF;
+  background-color: #FFAA00;
+  opacity: 0.5;
+  border-color: #FFAA00;
+}
+
+.btn-outline-primary:disabled {
+  color:#FFAA00;
+}
+
+.btn-outline-primary:disabled:hover{
+  background-color: transparent;
+}
+
+.btn-outline-info {
+  background-color:#995400;
+  border-color: #995400;
+  color: #FFF;
+
+  &:hover {
+  color: #FFF;
+  background-color:#995400;
+  border-color: #995400;
+  }
+}
+
+.btn-outline-danger {
+  background-color: #e3342f;
+  border-color: #e3342f;
+  color: #FFF;
+
+  &:hover {
+    background-color: #e3342f;
+    border-color: #e3342f;
+    color: #FFF;
+    opacity: 0.5;
+  }
+}
+
+.btn-primary {
+  color:#FFF;
+  background-color: #FFAA00;
+  border-color: #FFAA00;
+
+  &:hover {
+    background-color: #FFAA00;
+    border-color: #FFAA00;
+    color: #FFF;
+    opacity: 0.5;
+  }
+}
+
+.btn-link {
+  color: #FFAA00;
+}
+
+.foot {
+  padding-bottom: 20rem !important;
 }

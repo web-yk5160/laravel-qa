@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">
                   <div class="d-flex align-items-center">
-                    <h2>Edit Question</h2>
+                    <h2 class="list">質問の編集</h2>
                     <div class="ml-auto">
                       <a href="{{ route('questions.index') }}" class="btn btn-outline-secondary">質問一覧へ戻る</a>
                     </div>

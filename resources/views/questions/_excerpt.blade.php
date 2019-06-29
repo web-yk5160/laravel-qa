@@ -1,4 +1,4 @@
-<div class="media post">
+<div class="media post" style="border-bottom:1px solid brown;">
   <div class="d-flex flex-column counters">
     <div class="vote">
       <strong>{{ $question->votes_count }}</strong> 投票数
