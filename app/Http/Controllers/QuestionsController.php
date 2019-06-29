@@ -49,7 +49,7 @@ class QuestionsController extends Controller
     {
         $request->user()->questions()->create($request->only('title', 'body'));
 
-        return redirect()->route('questions.index')->with('success', "Your question has been submitted");
+        return redirect()->route('questions.index')->with('success', "質問が送信されました");
     }
 
     /**
@@ -93,12 +93,12 @@ class QuestionsController extends Controller
         if ($request->expectsJson())
         {
             return response()->json([
-                'message' => 'Your question has been updated.',
+                'message' => '質問が更新されました',
                 'body_html' => $question->body_html
             ]);
         }
 
-        return redirect('/questions')->with('success', 'Your question has been updated.');
+        return redirect('/questions')->with('success', '質問が更新されました');
     }
 
     /**
@@ -116,10 +116,10 @@ class QuestionsController extends Controller
         if (request()->expectsJson())
         {
             return response()->json([
-                'message' => "Your question has been deleted."
+                'message' => "質問が削除されました"
             ]);
         }
 
-        return redirect('/questions')->with('success', "Your question has been deleted.");
+        return redirect('/questions')->with('success', "質問が削除されました");
     }
 }

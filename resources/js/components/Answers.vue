@@ -12,7 +12,7 @@
             <answer @deleted="remove(index)" v-for="(answer, index) in answers" :answer="answer" :key="answer.id"></answer>
 
             <div class="text-center mt-3" v-if="nextUrl">
-              <button @click.prevent="fetch(nextUrl)" class="btn btn-outline-secondary">Load more answers</button>
+              <button @click.prevent="fetch(nextUrl)" class="btn btn-outline-secondary">さらに表示</button>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default {
 
   computed: {
     title () {
-      return this.count + " " + (this.count > 1 ? 'Answers' : 'Answer');
+      return this.count + "件の回答があります";
     }
   },
 

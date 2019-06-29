@@ -21,7 +21,7 @@ class VoteAnswerController extends Controller
 
         if (request()->expectsJson()) {
             return response()->json([
-                'message' => 'Thanks for the feedback',
+                'message' => '評価ありがとうございます',
                 'votesCount' => $votesCount
             ]);
         }

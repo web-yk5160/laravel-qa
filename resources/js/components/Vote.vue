@@ -65,7 +65,7 @@ export default {
 
     _vote(vote) {
       if ( ! this.signedIn) {
-        this.$toast.warning (`Please login to vote the ${this.name}`, "Warning", {
+        this.$toast.warning (`評価する前にログインしてください`, "注意", {
           timeout: 3000,
           position: 'bottomLeft'
         });
@@ -74,7 +74,7 @@ export default {
       }
       axios.post(this.endpoint, { vote })
       .then(res => {
-        this.$toast.success(res.data.message, "success", {
+        this.$toast.success(res.data.message, "成功", {
           timeout: 3000,
           position: 'bottomLeft'
         });

@@ -11195,3 +11195,7 @@ form.form-delete {
   display: none;
 }
 
+.cat {
+  background-image: url(/images/catstamp.png?dfb5f9092c3d84e60ecfb7d291a6aa65);
+}
+

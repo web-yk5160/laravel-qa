@@ -14,8 +14,8 @@
                     <div class="form-group">
                       <textarea rows="10" v-model="body" class="form-control" required></textarea>
                     </div>
-                    <button class="btn btn-primary" :disabled="isInvalid">Update</button>
-                    <button class="btn btn-outline-secondary" @click="cancel" type="button">Cancel</button>
+                    <button class="btn btn-primary" :disabled="isInvalid">更新</button>
+                    <button class="btn btn-outline-secondary" @click="cancel" type="button">キャンセル</button>
                 </div>
               </div>
           </form>
@@ -24,7 +24,7 @@
                   <div class="d-flex align-items-center">
                     <h1>{{ title }}</h1>
                     <div class="ml-auto">
-                      <a href="/questions" class="btn btn-outline-secondary">Back to all Question</a>
+                      <a href="/questions" class="btn btn-outline-secondary">質問一覧へ戻る</a>
                     </div>
                   </div>
                 </div>
@@ -39,14 +39,14 @@
                     <div class="row">
                       <div class="col-4">
                         <div class="ml-auto">
-                            <a v-if="authorize('modify', question)" @click.prevent="edit" class="btn btn-sm btn-outline-info">Edit</a>
-                            <button v-if="authorize('deleteQuestion', question)" @click="destroy" class="btn btn-sm btn-outline-danger">Delete</button>
+                            <a v-if="authorize('modify', question)" @click.prevent="edit" class="btn btn-sm btn-outline-info">編集</a>
+                            <button v-if="authorize('deleteQuestion', question)" @click="destroy" class="btn btn-sm btn-outline-danger">削除</button>
                         </div>
                       </div>
                       <div class="col-4"></div>
                       <div class="col-4">
 
-                        <user-info :model="question" label="Asked"></user-info>
+                        <user-info :model="question" label="に質問"></user-info>
                       </div>
                     </div>
                 </div>

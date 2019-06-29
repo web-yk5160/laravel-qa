@@ -4,7 +4,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-title">
-              <h3>Your Answer</h3>
+              <h3>あなたの回答</h3>
             </div>
             <hr>
             <form @submit.prevent="create">
@@ -13,7 +13,7 @@
                 <textarea name="body" rows="7" required v-model="body" class="form-control "></textarea>
               </div>
               <div class="form-group">
-                <button type="submit" :disabled="isInvalid" class="btn btn-lg btn-outline-primary">Submit</button>
+                <button type="submit" :disabled="isInvalid" class="btn btn-lg btn-outline-primary">投稿</button>
               </div>
             </form>
           </div>

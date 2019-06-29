@@ -33,7 +33,7 @@ export default {
   methods: {
     toggle () {
       if (! this.signedIn) {
-        this.$toast.warning("Please login to favorite this question", "Warning", {
+        this.$toast.warning("評価する前にログインしてください", "注意", {
           timeout: 3000,
           position: 'bottomLeft'
         });

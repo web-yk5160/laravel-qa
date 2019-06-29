@@ -36,12 +36,12 @@ class AnswersController extends Controller
         if ($request->expectsJson())
         {
             return response()->json([
-                'message' => "Your answer has been submitted successfully.",
+                'message' => "回答が送信されました",
                 'answer' => $answer->load('user')
             ]);
         }
 
-        return back()->with('success', "Your answer has been submitted successfully.");
+        return back()->with('success', "回答が送信されました");
     }
 
     /**
@@ -74,12 +74,12 @@ class AnswersController extends Controller
 
         if ($request->expectsJson()) {
             return response()->json([
-                'message' => 'Your answer has been updated',
+                'message' => '回答が更新されました',
                 'body_html' => $answer->body_html
             ]);
         }
 
-        return redirect()->route('questions.show', $question->slug)->with('success', 'Your answer has been updated');
+        return redirect()->route('questions.show', $question->slug)->with('success', '回答が更新されました');
     }
 
     /**
@@ -97,10 +97,10 @@ class AnswersController extends Controller
         if (request()->expectsJson())
         {
             return response()->json([
-                'message' => 'Your answer has been removed'
+                'message' => '回答が削除されました'
             ]);
         }
 
-        return back()->with('success', 'Your answer has been removed');
+        return back()->with('success', '回答が削除されました');
     }
 }

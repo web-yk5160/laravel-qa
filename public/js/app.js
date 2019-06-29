@@ -11183,7 +11183,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   },
   computed: {
     title: function title() {
-      return this.count + " " + (this.count > 1 ? 'Answers' : 'Answer');
+      return this.count + "件の回答があります";
     }
   },
   components: {
@@ -11230,7 +11230,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toggle: function toggle() {
       if (!this.signedIn) {
-        this.$toast.warning("Please login to favorite this question", "Warning", {
+        this.$toast.warning("評価する前にログインしてください", "注意", {
           timeout: 3000,
           position: 'bottomLeft'
         });
@@ -11489,7 +11489,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['model', 'label'],
   computed: {
     postDate: function postDate() {
-      return this.label + " " + this.model.created_date;
+      return this.model.created_date + this.label;
     }
   },
   data: function data() {
@@ -11570,7 +11570,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       if (!this.signedIn) {
-        this.$toast.warning("Please login to vote the ".concat(this.name), "Warning", {
+        this.$toast.warning("\u8A55\u4FA1\u3059\u308B\u524D\u306B\u30ED\u30B0\u30A4\u30F3\u3057\u3066\u304F\u3060\u3055\u3044", "注意", {
           timeout: 3000,
           position: 'bottomLeft'
         });
@@ -11580,7 +11580,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post(this.endpoint, {
         vote: vote
       }).then(function (res) {
-        _this.$toast.success(res.data.message, "success", {
+        _this.$toast.success(res.data.message, "成功", {
           timeout: 3000,
           position: 'bottomLeft'
         });
@@ -49194,7 +49194,7 @@ var render = function() {
                     staticClass: "btn btn-primary",
                     attrs: { disabled: _vm.isInvalid }
                   },
-                  [_vm._v("Update")]
+                  [_vm._v("更新")]
                 ),
                 _vm._v(" "),
                 _c(
@@ -49204,7 +49204,7 @@ var render = function() {
                     attrs: { type: "button" },
                     on: { click: _vm.cancel }
                   },
-                  [_vm._v("Cancel")]
+                  [_vm._v("キャンセル")]
                 )
               ]
             )
@@ -49226,7 +49226,7 @@ var render = function() {
                               }
                             }
                           },
-                          [_vm._v("Edit")]
+                          [_vm._v("編集")]
                         )
                       : _vm._e(),
                     _vm._v(" "),
@@ -49237,7 +49237,7 @@ var render = function() {
                             staticClass: "btn btn-sm btn-outline-danger",
                             on: { click: _vm.destroy }
                           },
-                          [_vm._v("Delete")]
+                          [_vm._v("削除")]
                         )
                       : _vm._e()
                   ])
@@ -49250,7 +49250,7 @@ var render = function() {
                   { staticClass: "col-4" },
                   [
                     _c("user-info", {
-                      attrs: { model: _vm.answer, label: "Answered" }
+                      attrs: { model: _vm.answer, label: "に回答" }
                     })
                   ],
                   1
@@ -49326,7 +49326,7 @@ var render = function() {
                                 }
                               }
                             },
-                            [_vm._v("Load more answers")]
+                            [_vm._v("さらに表示")]
                           )
                         ])
                       : _vm._e()
@@ -49463,7 +49463,7 @@ var render = function() {
                     staticClass: "btn btn-lg btn-outline-primary",
                     attrs: { type: "submit", disabled: _vm.isInvalid }
                   },
-                  [_vm._v("Submit")]
+                  [_vm._v("投稿")]
                 )
               ])
             ]
@@ -49479,7 +49479,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-title" }, [
-      _c("h3", [_vm._v("Your Answer")])
+      _c("h3", [_vm._v("あなたの回答")])
     ])
   }
 ]
@@ -49578,7 +49578,7 @@ var render = function() {
                         staticClass: "btn btn-primary",
                         attrs: { disabled: _vm.isInvalid }
                       },
-                      [_vm._v("Update")]
+                      [_vm._v("更新")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -49588,7 +49588,7 @@ var render = function() {
                         attrs: { type: "button" },
                         on: { click: _vm.cancel }
                       },
-                      [_vm._v("Cancel")]
+                      [_vm._v("キャンセル")]
                     )
                   ])
                 ])
@@ -49633,7 +49633,7 @@ var render = function() {
                                     }
                                   }
                                 },
-                                [_vm._v("Edit")]
+                                [_vm._v("編集")]
                               )
                             : _vm._e(),
                           _vm._v(" "),
@@ -49644,7 +49644,7 @@ var render = function() {
                                   staticClass: "btn btn-sm btn-outline-danger",
                                   on: { click: _vm.destroy }
                                 },
-                                [_vm._v("Delete")]
+                                [_vm._v("削除")]
                               )
                             : _vm._e()
                         ])
@@ -49657,7 +49657,7 @@ var render = function() {
                         { staticClass: "col-4" },
                         [
                           _c("user-info", {
-                            attrs: { model: _vm.question, label: "Asked" }
+                            attrs: { model: _vm.question, label: "に質問" }
                           })
                         ],
                         1
@@ -49684,7 +49684,7 @@ var staticRenderFns = [
           staticClass: "btn btn-outline-secondary",
           attrs: { href: "/questions" }
         },
-        [_vm._v("Back to all Question")]
+        [_vm._v("質問一覧へ戻る")]
       )
     ])
   }

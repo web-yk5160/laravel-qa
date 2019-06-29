@@ -7,21 +7,21 @@
         <div class="form-group">
           <textarea rows="10" v-model="body" class="form-control" required></textarea>
         </div>
-        <button class="btn btn-primary" :disabled="isInvalid">Update</button>
-        <button class="btn btn-outline-secondary" @click="cancel" type="button">Cancel</button>
+        <button class="btn btn-primary" :disabled="isInvalid">更新</button>
+        <button class="btn btn-outline-secondary" @click="cancel" type="button">キャンセル</button>
       </form>
       <div v-else>
         <div v-html="bodyHtml"></div>
         <div class="row">
           <div class="col-4">
             <div class="ml-auto">
-                      <a v-if="authorize('modify', answer)" @click.prevent="edit" class="btn btn-sm btn-outline-info">Edit</a>
-                      <button v-if="authorize('modify', answer)" @click="destroy" class="btn btn-sm btn-outline-danger">Delete</button>
+                      <a v-if="authorize('modify', answer)" @click.prevent="edit" class="btn btn-sm btn-outline-info">編集</a>
+                      <button v-if="authorize('modify', answer)" @click="destroy" class="btn btn-sm btn-outline-danger">削除</button>
                   </div>
           </div>
           <div class="col-4"></div>
           <div class="col-4">
-            <user-info :model="answer" label="Answered"></user-info>
+            <user-info :model="answer" label="に回答"></user-info>
 
           </div>
         </div>

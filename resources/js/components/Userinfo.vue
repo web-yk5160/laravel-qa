@@ -17,7 +17,7 @@ export default {
   props: ['model', 'label'],
   computed: {
     postDate () {
-      return this.label + " " + this.model.created_date;
+      return this.model.created_date + this.label;
     }
   },
   data () {
