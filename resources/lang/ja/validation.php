@@ -109,5 +109,8 @@ return [
     | of "email". This simply helps us make messages a little cleaner.
     |
     */
-    'attributes' => [],
+    'attributes' => [
+        'title'=>'タイトル',
+        'body'=>'質問内容',
+    ],
 ];

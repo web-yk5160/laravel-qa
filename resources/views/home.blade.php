@@ -1,22 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container footer">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">ダッシュボード</div>
+                <div class="card-header" style="color:#FFF;">ダッシュボード</div>
 
-                <div class="card-body">
+                <div class="card-body" style="text-align:center;">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    ログインしました。
+                    ログインしました。&nbsp;&nbsp;<br>
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        マイページへ！
+                    &nbsp;マイページはこちら！
                     </a>
                 </div>
             </div>
